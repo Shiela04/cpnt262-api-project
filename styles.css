@@ -1,0 +1,85 @@
+body {
+  background-image: url("images/snowflakes.jpg");
+  margin: 0;
+  height: auto;
+  width: 100%;
+}
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  color: black;
+  padding: 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.form-container {
+  background-image: url("images/plant.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+#name-storage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+#save-name {
+  border-radius: 15px;
+  padding: 5px;
+}
+
+#save-name:hover {
+  color: white;
+  background-color: black;
+}
+
+#personal-greeting {
+  color: red;
+  font-weight: bolder;
+}
+
+#weather-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.get-weather-btn {
+  padding: 10px;
+  font-size: larger;
+  border-radius: 25px;
+}
+
+.get-weather-btn:hover {
+  color: white;
+  background-color: black;
+}
+
+#weather-data {
+  background-image: url("images/weather-bg.jpg");
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-height: 100%;
+  padding: 50px;
+  border-radius: 15px;
+}

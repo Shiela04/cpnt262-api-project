@@ -5,7 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <title>What's the Weather With You</title>
   </head>
-  <body></body>
+  <body>
+    <h1>What's the weather with you?</h1>
+
+    <section class="main-container">
+      <section class="form-container">
+        <p>
+          You want to find out the weather in any city in the world? Fill out
+          this form!
+        </p>
+        <section id="name-storage">
+          <label for="username">Enter name:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Your Name"
+            required
+          />
+          <button id="save-name">Save Name</button>
+          <p id="personal-greeting"></p>
+        </section>
+
+        <section>
+          <form id="weather-form">
+            <label for="unit-toggle">Select Temperature Unit:</label>
+            <select id="unit-toggle">
+              <option value="celsius">Celsius (°C)</option>
+              <option value="fahrenheit">Fahrenheit (°F)</option>
+            </select>
+
+            <label for="city">Enter City:</label>
+            <input type="text" id="city" placeholder="City Name" />
+            <p id="city-error-message"></p>
+            <button class="get-weather-btn" type="submit">Get Weather</button>
+          </form>
+        </section>
+      </section>
+
+      <section id="weather-data">
+        <h2>Weather Details</h2>
+        <div id="weather-info"></div>
+      </section>
+    </section>
+  </body>
 </html>

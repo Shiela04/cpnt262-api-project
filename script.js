@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // fetch weather data
       try {
-        const apiKey = "93426847adde4ab59aae459329223b60";
+        const apiKey = "__API_KEY__";
         const encodedCity = encodeURIComponent(city);
         const unitMapping = {
           celsius: "metric",

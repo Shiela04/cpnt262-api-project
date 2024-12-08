@@ -53,8 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
           celsius: "metric",
           fahrenheit: "imperial",
         };
-        // default to celsius
-        const apiUnit = unitMapping[unit] || "metric";
+        const apiUnit = unitMapping[unit];
         const endpoint = `https://api.weatherbit.io/v2.0/current?city=${encodedCity}&units=${apiUnit}&key=${apiKey}`;
         const response = await fetch(endpoint);
 
